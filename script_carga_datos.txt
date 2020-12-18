@@ -1,0 +1,45 @@
+
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(1, 'Nombre A1', 'Apellido A1', '10000111-1', 'apo1@edu.cl', '975612338');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(2, 'Nombre A2', 'Apellido A2', '18000181-7', 'apo2@edu.cl', '972615248');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(3, 'Nombre A3', 'Apellido A3', '14002251-k', 'apo3@edu.cl', '985614477');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(4, 'Nombre A4', 'Apellido A4', '12800191-3', 'apo4@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(5, 'Nombre A5', 'Apellido A5', '15800152-8', 'apo5@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(6, 'Nombre A6', 'Apellido A6', '13600171-7', 'apo6@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(7, 'Nombre A7', 'Apellido A7', '12896691-9', 'apo7@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(8, 'Nombre A8', 'Apellido A8', '12869191-5', 'apo8@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(9, 'Nombre A9', 'Apellido A9', '12669191-1', 'apo9@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(10, 'Nombre A10', 'Apellido A10', '14880191-k', 'apo10@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(11, 'Nombre A11', 'Apellido A11', '10800888-2', 'apo11@edu.cl', '955619586');
+INSERT INTO apoderado(id_apoderado, nombre, apellido, run, email, telefono) VALUES(12, 'Nombre A12', 'Apellido A12', '11558197-5', 'apo12@edu.cl', '955619586');
+
+INSERT INTO alumno(id_alumno, nombre, apellido, run, id_apoderado) VALUES(1, 'Pedro', 'Perez', '23908789-0', 1);
+
+INSERT INTO evaluador(id_evaluador, nombre, apellido, run) VALUES(1, 'Nombre Evaluador 1', 'Apellido Evaluador 1', '10876222-k');
+INSERT INTO evaluador(id_evaluador, nombre, apellido, run) VALUES(2, 'Nombre Evaluador 2', 'Apellido Evaluador 2', '10446925-6');
+
+INSERT INTO curso(id_curso, nivel) VALUES(1, 'PRIMERO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(2, 'SEGUNDO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(3, 'TERCERO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(4, 'CUARTO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(5, 'QUINTO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(6, 'SEXTO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(7, 'SEPTIMO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(8, 'OCTAVO BASICO');
+INSERT INTO curso(id_curso, nivel) VALUES(9, 'PRIMERO MEDIO');
+INSERT INTO curso(id_curso, nivel) VALUES(10, 'SEGUNDO MEDIO');
+INSERT INTO curso(id_curso, nivel) VALUES(11, 'TERCERO MEDIO');
+INSERT INTO curso(id_curso, nivel) VALUES(12, 'CUARTO MEDIO');
+
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (1, 'Lenguaje 1° BAS', 1);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (2, 'Matemáticas 1° BAS', 1);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (3, 'Historia 1° BAS', 1);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (4, 'Cs. Naturales 1° BAS', 1);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (5, 'Lenguaje 2° BAS', 4);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (6, 'Matemáticas 2° BAS', 4);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (7, 'Historia 2° BAS', 4);
+INSERT INTO asignatura(id_asignatura, nombre, id_curso) VALUES (8, 'Cs. Naturales 2° BAS', 4);
+
+INSERT INTO evaluacion(id_evaluacion, puntaje_maximo, puntaje_aprobacion, fecha, id_evaluador, id_asignatura) VALUES(1, 100.00, 60.00, '14/11/2020', 1, 1);
+
+INSERT INTO alumno_evaluacion(id_alumno, id_evaluacion) VALUES(1, 1);
+
