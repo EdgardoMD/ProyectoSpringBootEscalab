@@ -11,6 +11,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel(description = "Información del Alumno")
 @Entity
 @Table(name = "alumno")
 public class Alumno {
@@ -19,7 +22,7 @@ public class Alumno {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idAlumno;
 	
-	@Size(min = 3, message = "Nombre debe tener mínimo 3 caracteres")
+	@Size(min = 3, message = "Nombres debe tener mínimo 3 caracteres")
 	@Column(name = "nombres", nullable = false, length = 50)
 	private String nombres;
 	

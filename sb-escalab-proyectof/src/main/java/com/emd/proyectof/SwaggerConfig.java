@@ -18,7 +18,7 @@ public class SwaggerConfig {
 	
 	public static final Contact DEFAULT_CONTACT = new Contact("EdgardoMD", "https://www.edgardomd.cl",
 			"edgardomora@hotmail.com");
-	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Proyectof Api Documentation", "Proyectof Api Documentation", "1.0",
+	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Proyecto Final Curso Spring Boot Escalaba - Api Documentation", "Proyectof Api Documentation", "1.0",
 			"PREMIUM", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",
 			new ArrayList<VendorExtension>());
 	

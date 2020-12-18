@@ -32,7 +32,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		.requestMatchers()
 		.and()
 		.authorizeRequests()
-		.antMatchers("/v2/api-docs/**").authenticated()
+		.antMatchers("/v2/api-docs/**").authenticated()//Cambiar a permitAll() para revisar doc swagger
 		.antMatchers("/evaluaciones/**").authenticated()
 		.antMatchers("/asignaturas/**").authenticated()
 		.antMatchers("/tests/**").authenticated()
